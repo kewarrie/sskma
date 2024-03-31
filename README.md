@@ -1,8 +1,14 @@
-# Simple Shared Key Authentication
+# Simple Shared Key Mutual Authentication
 
-The algorithm that made me dig past my school files just to retreive it.
+Shared key mutual authentication allows secure communication between two parties, like Alice and Bob, who share a secret key.
 
-A simple concept. The heart of many Public/Private Key (Cryptography) algorithms.
+1. Alice initiates by sending a random challenge.
+2. Bob encrypts this challenge with the shared key and sends it back.
+3. Alice decrypts it with the same key.
+4. If successful, she knows Bob has the key.
+5. Then, Alice sends her own challenge, and Bob repeats the process.
+
+This confirms both parties' identities and allows them to communicate securely.
 
 # Running the Algorithm
 
